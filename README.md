@@ -9,4 +9,4 @@ There are limitations to this script since it leverages more limited data than t
 pip install -r requirements.txt
 
 # Usage
-python3 snyk_report.py 
+snyk sbom monitor --experimental --file=my_sbom.json --remote-repo-url=https://github.com/my/repo | python3 snyk_report.py
